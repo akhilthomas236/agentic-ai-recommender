@@ -38,8 +38,10 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-# Method 1: Using the convenience script
+# Method 1: Using the convenience script (recommended)
 ./run_app.sh
+# This script will automatically fall back to a lite version 
+# if there are issues installing all dependencies
 
 # Method 2: Manual setup
 # Create a virtual environment
@@ -49,11 +51,18 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the Streamlit app
+# Run the full Streamlit app
 streamlit run app.py
+
+# OR run the lite version with minimal dependencies
+streamlit run app_lite.py
 ```
 
 This will start the application on your local machine and open it in your default web browser.
+
+### Python 3.13+ Compatibility
+
+If you're using Python 3.13 or newer (where `distutils` has been removed), you may encounter dependency installation issues. The script will automatically handle this by falling back to the lite version, or you can manually run the lite version which requires only Streamlit.
 
 ## Project Structure
 

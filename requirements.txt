@@ -1,10 +1,10 @@
 # Core dependencies - actually used in the application
 streamlit>=1.32.0
-pandas==1.5.3  # Using a more stable version that requires less build dependencies
-numpy>=1.20.0,<1.25.0
-scikit-learn>=1.0.2
-plotly>=5.10.0
-json5>=0.9.6
+pandas>=2.0.0  # Newer versions have better Python 3.13 compatibility
+numpy>=1.26.0  # Version 1.26.0+ works with Python 3.13 without distutils
+scikit-learn>=1.4.0  # Using newer version compatible with numpy 1.26+
+plotly>=5.15.0
+json5>=0.9.14
 
 # Setup tools (needed for installation)
 setuptools>=65.0.0
@@ -12,6 +12,14 @@ wheel>=0.38.0
 
 # Note: The frameworks below are not directly imported/used in the application code
 # but are kept as references in the data file. They can be removed for deployment.
+
+# Alternative dependencies for Python 3.13 (uncomment these and comment out the above if needed)
+# streamlit>=1.32.0
+# pandas-stubs  # Stub-only package that can be used without pandas installed for demo purposes
+# numpy>=1.26.0
+# scikit-learn>=1.4.0
+# plotly>=5.15.0
+# json5>=0.9.14
 
 # Optional: For enhanced UI (uncomment if needed)
 # streamlit-extras>=0.2.7
