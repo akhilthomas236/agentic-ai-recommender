@@ -1,34 +1,18 @@
-setuptools>=65.0.0
-wheel>=0.38.0
+# Core dependencies - actually used in the application
 streamlit>=1.32.0
 pandas>=2.0.0,<2.2.0
 numpy>=1.24.0,<1.27.0
-matplotlib>=3.7.0
 scikit-learn>=1.3.0
 plotly>=5.15.0
+json5>=0.9.14
 
-# AI Framework Libraries (Core ones that are pip installable)
-crewai>=0.22.0
-langchain>=0.0.267
-langchain-core>=0.0.13
-haystack-ai>=1.20.0
-# langgraph is a newer package, using an early stable version
-langgraph>=0.0.10
-semantic-kernel>=0.3.10
-pymongo>=4.5.0
-neo4j>=5.13.0
-psycopg2-binary>=2.9.6
-elasticsearch>=8.10.0
-pyarrow>=12.0.0
+# Setup tools (needed for installation)
+setuptools>=65.0.0
+wheel>=0.38.0
 
-# Quality and Assurance
-ragas>=0.0.17
-guardrails-ai>=0.3.2
-opentelemetry-api>=1.18.0
-opentelemetry-sdk>=1.18.0
-opentelemetry-exporter-otlp>=1.18.0
-traceloop-sdk>=0.4.0
+# Note: The frameworks below are not directly imported/used in the application code
+# but are kept as references in the data file. They can be removed for deployment.
 
-# Optional: For visualization and styling
-streamlit-extras>=0.2.7
-streamlit-option-menu>=0.3.2
+# Optional: For enhanced UI (uncomment if needed)
+# streamlit-extras>=0.2.7
+# streamlit-option-menu>=0.3.2

@@ -22,7 +22,7 @@ The application provides recommendations across four key categories:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/agentic-ai-recommender.git
+git clone https://github.com/akhilthomas236/agentic-ai-recommender.git
 cd agentic-ai-recommender
 
 # Create a virtual environment (optional but recommended)
@@ -32,6 +32,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 ```
+
+**Note:** The application only requires a few core packages (streamlit, pandas, scikit-learn, plotly) to run. The full list of AI frameworks mentioned in the application are not actually imported or used in the code - they are only referenced in the data for recommendation purposes.
 
 ## Usage
 
