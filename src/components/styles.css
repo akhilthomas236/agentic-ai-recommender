@@ -1,0 +1,97 @@
+/* Custom styles for AI Agentic Tool Recommender */
+
+/* Main header */
+.stApp h1 {
+    color: #1E3A8A;
+}
+
+/* Sidebar */
+.css-1d391kg {
+    background-color: #F8FAFC;
+}
+
+/* Cards */
+div[data-testid="stExpander"] {
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.stButton button {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Sliders */
+div[data-testid="stSlider"] {
+    padding: 1rem 0;
+}
+
+/* Tool rating stars */
+.rating {
+    color: #FFB400;
+    font-size: 20px;
+}
+
+/* Score indicators */
+.score-badge {
+    background-color: #E0F2FE;
+    color: #0369A1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+/* Framework tags */
+.framework-tag {
+    background-color: #F0F9FF;
+    border: 1px solid #BAE6FD;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    margin-right: 4px;
+    color: #0369A1;
+}
+
+/* Architecture diagram */
+.architecture-diagram {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #1E3A8A;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #1E3A8A;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
