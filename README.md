@@ -2,6 +2,8 @@
 
 A Streamlit application that helps users navigate the complex ecosystem of AI agent development by recommending tools and frameworks based on project requirements.
 
+🚀 **Live Demo**: [https://agentic-ai-recommender.streamlit.app/](https://agentic-ai-recommender.streamlit.app/)
+
 ## Features
 
 - **Tool Recommendation Engine**: Get personalized recommendations for AI frameworks and tools based on your project description and preferences
@@ -59,6 +61,13 @@ streamlit run app_lite.py
 ```
 
 This will start the application on your local machine and open it in your default web browser.
+
+### Online Demo
+
+The application is deployed and available online at:
+[https://agentic-ai-recommender.streamlit.app/](https://agentic-ai-recommender.streamlit.app/)
+
+You can access it directly from any web browser without installing anything locally.
 
 ### Python 3.13+ Compatibility
 
